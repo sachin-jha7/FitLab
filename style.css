@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100dvh; */
+    /* height: 100vh; */
+    min-height: 100dvh;
+    width: 100vw;
+    background-color: rgb(0, 0, 8);
+    color: white;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    /* overflow: auto; */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px gray;
+    position: sticky;
+    top: 0;
+    /* z-index: ; */
+    /* background-color: rgba(255,255,255,0.1); */
+}
+
+
+.logo {
+    font-size: 27px;
+    color: rgb(6, 252, 6);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 30px;
+}
+
+.nav-links ul {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.nav-links ul li {
+    margin-left: 40px;
+    list-style-type: none;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li a:hover {
+    color: rgb(21, 243, 21);
+    border-bottom: 1px solid rgb(21, 243, 21);
+}
+
+.btn {
+    height: 35px;
+    width: 120px;
+    background-color: rgb(20, 245, 20);
+    border: 1px solid rgb(21, 243, 21);
+    color: rgb(247, 244, 244);
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+}
+
+.nav-btn {
+    margin-left: 30px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: rgb(21, 243, 21);
+}
+
+/* main section */
+
+.main {
+
+    /* height: calc(100% - 60px); */
+    /* min-height: 100vh; */
+    height: calc(100vh - 60px);
+    width: 100%;
+    /* overflow-y: scroll; */
+    display: flex;
+}
+
+.main .left {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    /* margin-top: 70px; */
+}
+
+.main .left p {
+    margin-left: 120px;
+}
+
+.main .left .heading {
+    font-size: 65px;
+    font-weight: 400;
+    color: rgb(20, 245, 20);
+    margin-top: 140px;
+}
+
+.left .sub-heading {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 20px;
+
+}
+
+.left .text {
+    font-size: 18px;
+    margin-top: 15px;
+    color: rgb(204, 202, 202);
+}
+
+.main .left button {
+    margin-left: 120px;
+    margin-top: 25px;
+    width: 130px;
+}
+
+.main .right {
+    width: 50%;
+    height: 95%;
+    /* border: 1px solid greenyellow; */
+    background-image: url("Gallery/man_gym-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+
+/* Program section */
+
+.program {
+
+    /* height: calc(100vh - 60px); */
+    border: 0.1px solid rgb(0, 0, 8);
+
+}
+
+.program .heading {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    margin-top: 70px;
+
+
+}
+
+.program .cards {
+    height: fit-content;
+    width: 75%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+.program .cards .card {
+    height: 320px;
+    width: 250px;
+    border: 0.1px solid #121212;
+    background-color: #121212;
+    padding: 10px;
+    /* margin: 10px; */
+    /* margin-left: 60px; */
+    margin-left: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cards .card img {
+    height: 200px;
+    width: 250px;
+
+}
+
+.card .card-header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.card .desc {
+    font-size: 15px;
+    color: rgb(185, 172, 172);
+    margin-top: 10px;
+}
+
+/* plans */
+
+
+.plans {
+    border: 0.1px solid rgb(0, 0, 8);
+}
+
+.plans .heading {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    margin-top: 90px;
+}
+
+.plans .cards {
+    width: 70%;
+    height: fit-content;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin: auto;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+
+.plans .cards .card {
+    height: 260px;
+    width: 250px;
+    border: 0.1px solid rgb(16, 243, 16);
+    /* margin-left: 50px; */
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.card i {
+    font-size: 25px;
+    color: yellow;
+}
+
+.card .diamond {
+    color: dodgerblue;
+}
+
+.card .plan-name {
+    font-size: 23px;
+    margin-top: 60px;
+    color: rgb(21, 243, 21);
+    font-weight: 500;
+}
+
+.card .price {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card .about-text {
+    font-size: 15px;
+    color: rgb(201, 196, 196);
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.cards .card button {
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: orangered;
+    border: 1px solid orangered;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cards .card button:hover {
+    background-color: transparent;
+    color: white;
+
+}
+
+/* blog section */
+
+.blogs {
+    border: 0.1px solid rgb(0, 0, 8);
+}
+
+.blogs .heading {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    justify-content: space-evenly;
+}
+
+.blog-cards .card {
+    height: 340px;
+    width: 250px;
+    background-color: #121212;
+    /* border: 1px solid rgb(20, 245, 20); */
+    padding: 10px;
+    /* margin: auto; */
+    margin-top: 10px;
+}
+
+.blog-cards .card img {
+    height: 220px;
+    width: 250px;
+}
+
+.blog-cards .tip-heading {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.blog-cards .card button {
+    height: 35px;
+    width: 130px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.blog-cards .card button:hover {
+    background-color: transparent;
+    color: dodgerblue;
+    color: white;
+}
+
+/* contact section */
+
+.contact {
+
+    border: 0.1px solid rgb(0, 0, 8);
+}
+
+
+.contact .text-box {
+    height: fit-content;
+    width: fit-content;
+    margin: 70px auto 0px auto;
+    /* margin-top: 10px; */
+
+}
+
+.text-box .contact-heading {
+    font-size: 45px;
+}
+
+.text-box .contact-text {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+}
+
+.container .contact-left {
+    width: 50%;
+}
+
+.contact-left p {
+    margin-left: 150px;
+}
+
+.contact-left .heading {
+    font-size: 65px;
+    color: rgb(16, 243, 16);
+    margin-top: 140px;
+}
+
+.contact-left .sub-heading {
+    font-size: 50px;
+    color: rgb(21, 243, 21);
+}
+
+.container .contact-right {
+    min-height: 80vh;
+    width: 50%;
+    background-image: url("Gallery/lady_gym-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.contact .form {
+    border: 1px solid royalblue;
+    margin: auto;
+    height: 155px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form input {
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.form button {
+    height: 35px;
+    width: 150px;
+    background-color: dodgerblue;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid dodgerblue;
+}
+
+.form button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.footer {
+    border: 0.1px solid rgb(0, 0, 8);
+    box-shadow: 2px 0px 5px gray;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.secondary {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+@media (max-width: 430px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: calc(100vh - 120px);
+        width: 100%;
+        top: -100%;
+        background-color: rgb(0, 0, 8);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        margin-right: 0px;
+        align-items: normal;
+    }
+
+    .nav-links ul button {
+        margin: 40px auto 0px auto;
+        height: 40px;
+        width: 150px;
+    }
+
+    .nav-links ul li {
+        margin-left: 0px;
+        margin: 50px auto 0px auto;
+    }
+
+    .nav-links ul li:first-of-type {
+        margin-top: 100px;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .secondary {
+        display: block;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main .left {
+        width: 100%;
+        height: 50%;
+        margin: 0;
+    }
+
+    .main .left p {
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .main .left .heading {
+        margin-top: 30px;
+        font-size: 45px;
+    }
+
+    .main .left .sub-heading {
+        margin-top: 30px;
+    }
+
+    .main .left .text {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .main .left button {
+        margin: 0;
+        margin-top: 40px;
+        margin-left: 50px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .main .right {
+        width: 100%;
+        margin-top: 50px;
+        /* border: 1px solid red; */
+    }
+
+
+    .program .cards {
+
+        width: 100%;
+        /* border: 1px solid red; */
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        margin-top: 60px;
+
+    }
+
+    .program .cards .card {
+        height: 320px;
+
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+
+    .program .cards .card img {
+        width: 250px;
+    }
+
+    .cards .card:first-of-type {
+        margin-left: 20px;
+    }
+
+    .plans .cards {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        margin-top: 70px;
+        /* border: 1px solid red; */
+    }
+
+    .plans .cards .card {
+        height: 320px;
+        margin-left: 40px;
+        padding: 10px 50px 10px 50px;
+        margin-top: 0px;
+    }
+
+    .card i {
+        margin-top: 20px;
+    }
+
+    .card .plan-name {
+        margin-top: 30px;
+    }
+
+    .blog-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 70px;
+        overflow-x: auto;
+
+    }
+
+    .blog-cards .card {
+        margin-left: 30px;
+    }
+
+    .text-box .contact-text {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .contact-left {
+        width: 100%;
+    }
+
+    .contact-left p {
+        margin-left: 0px;
+    }
+
+    .contact-left .heading {
+        font-size: 65px;
+        color: rgb(16, 243, 16);
+        margin-top: 70px;
+    }
+
+    .contact-left .sub-heading {
+        font-size: 50px;
+        color: rgb(21, 243, 21);
+    }
+
+
+    .container .contact-right {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border: 1px solid red; */
+        background-position: center;
+    }
+
+    .footer {
+        
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+
+}
